@@ -1,0 +1,163 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5; /* Light background */
+}
+
+/* Profile Section */
+.profile {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 2rem; 
+}
+
+/* Profile picture */
+.profile-pic-container {
+  width: 200px;
+  height: 300px;
+  border: 4px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Profile description */
+.profile-description {
+  max-width: 600px;
+  font-family: Arial, sans-serif;
+}
+
+.profile-description p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #666;
+  font-style: italic;
+}
+
+/* Social buttons container */
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* Space between buttons */
+  margin-top: 1rem;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+/* Common styles for social buttons */
+.social-button {
+  font-size: 1.5rem; /* Larger text size */
+  color: white; /* White text */
+  background-color: transparent; /* Transparent background */
+  border: 3px solid #0077b5; /* Light blue border */
+  padding: 1rem 2rem; /* Increased padding for larger buttons */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  font-weight: bold; /* Bold text */
+  text-transform: uppercase; /* Make text uppercase */
+  letter-spacing: 1px; /* Slightly increased letter-spacing */
+}
+
+/* Hover effects for social buttons */
+.social-button.github:hover {
+  background-color: #333; /* Dark background for GitHub */
+  color: white;
+  border: 3px solid #333; /* Dark border */
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.social-button.linkedin:hover {
+  background-color: #0077b5; /* LinkedIn blue */
+  color: white;
+  border: 3px solid #0077b5; /* Border stays the same */
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-pic-container {
+    width: 150px;
+    height: 150px;
+  }
+
+  .profile-description {
+    max-width: 100%;
+  }
+
+  .social {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-button {
+    margin-bottom: 1rem; /* Add space between buttons for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-description p {
+    font-size: 1rem;
+  }
+
+  .social-button {
+    font-size: 1.2rem; /* Slightly smaller text size on small screens */
+    padding: 0.8rem 1.5rem; /* Adjust padding for small screens */
+  }
+}
+
+.ptext{
+  font-style: italic;
+  font-size: 20px;  /* Adjust the font size for readability */
+  margin-bottom: 15px;
+  text-align: center;  /* Center the text horizontally */
+  padding-left: 20px;  /* Padding on left */
+  padding-right: 20px; /* Padding on right */
+  line-height: 1.6;    /* Line height for better readability */
+  margin-left: auto;   /* Centering horizontally with auto margin */
+  margin-right: auto;  /* Centering horizontally with auto margin */
+  width: 100%;         /* Make it take full width, but respect the padding */
+  max-width: 800px;
+}
+@media (max-width: 768px) {
+  .ptext {
+    font-size: 18px;   /* Slightly smaller text for tablets */
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ptext {
+    font-size: 16px;  /* Smaller text size for mobile */
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

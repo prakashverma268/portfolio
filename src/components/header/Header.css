@@ -1,0 +1,162 @@
+/* .header {
+    background-color: #282c34;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header h1 {
+    margin-bottom: 10px;
+  }
+  
+  nav {
+    display: flex;
+    gap: 20px; 
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    position: relative; 
+    transition: color 0.3s;
+  }
+  
+  nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: transparent;
+    bottom: -5px; 
+    left: 0;
+    transition: background 0.3s, transform 0.3s; 
+  }
+  
+  nav a:hover {
+    color: #61dafb;
+  }
+  
+  nav a:hover::after {
+    background: #61dafb; 
+    transform: scaleX(1); 
+  }
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column; 
+    }
+  
+    nav a {
+      padding: 10px; 
+    }
+  }
+  
+   */
+
+ /* General Header Styling */
+.header {
+  background: url('../images/9.jpeg') no-repeat center center; /* Removed 'fixed' for no movement on scroll */
+  background-size: cover; /* Ensure the background covers the entire header */
+  background-attachment: scroll; /* Ensure background doesn't move when scrolling */
+  color: white;
+  padding: 80px 20px; /* Add more padding for a larger header */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 30vh; /* Ensure the header takes up the full viewport height */
+}
+
+.header h1 {
+  font-size: 4rem; /* Make the name large */
+  font-weight: 700; /* Make the name bold */
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase; /* Make the name uppercase */
+  color: #61dafb; /* Light blue color to match the accent */
+  transition: color 0.3s ease;
+}
+
+.header h1:hover {
+  color: #fff; /* Change color on hover */
+  cursor: pointer; /* Add a pointer cursor for hover */
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  position: relative; /* Position for the pseudo-element */
+  font-size: 1.2rem; /* Slightly larger font size */
+  font-weight: 500;
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 1px;
+  transition: color 0.3s, transform 0.3s, border-color 0.3s; /* Add transition for smooth hover effects */
+}
+
+/* Underline effect */
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #61dafb; /* Light blue underline */
+  bottom: -5px; /* Position the line below the link */
+  left: 0;
+  transition: width 0.3s ease; /* Animate the underline width */
+}
+
+/* Hover effect on links */
+nav a:hover {
+  color: #61dafb; /* Light blue color on hover */
+  transform: scale(1.05); /* Slightly enlarge the link on hover */
+}
+
+nav a:hover::after {
+  width: 100%; /* Expand the underline when hovering */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .header {
+    background-attachment: scroll; /* Ensure no movement on smaller devices */
+  }
+
+  .header h1 {
+    font-size: 2.5rem; /* Smaller font for mobile */
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    padding: 12px 0; /* Adjust padding for mobile view */
+    font-size: 1.1rem; /* Slightly smaller font size */
+  }
+}
+
+/* Mobile and Tablet (max-width: 600px) */
+@media (max-width: 600px) {
+  .header {
+    padding: 50px 10px; /* Adjust padding for small devices */
+    min-height: 20vh; /* Reduce header height */
+  }
+
+  .header h1 {
+    font-size: 2rem; /* Further reduce font size for smaller screens */
+  }
+
+  nav a {
+    padding: 10px 0; /* Adjust padding for smaller screens */
+    font-size: 1rem; /* Further adjust font size */
+  }
+}
