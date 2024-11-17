@@ -32,7 +32,7 @@ const Profile = () => {
             Passionate about continuous learning, I strive to create efficient, high-performance solutions......
           </p>
           <div style={{fontSize:"25px",marginLeft: "15px"}}>
-            <a  style={{color :"white" ,marginRight:"20px" }} href="https://github.com/yourusername">GitHub</a>
+            <a  style={{color :"white" ,marginRight:"20px" }} href="https://github.com/prakashverma268/portfolio">GitHub</a>
             <a  style={{color :"white" ,marginRight:"20px"}}  href="https://www.linkedin.com/in/prakash-verma-924265206/">LinkedIn</a>
           </div>
         </div>
