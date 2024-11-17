@@ -14,19 +14,19 @@
   align-items: center;
   text-align: center;
   padding: 40px;
-  max-width: 700px; /* Same max-width as Summary */
+  max-width: 700px; 
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
-  border: 2px solid rgba(0, 115, 230, 0.5); /* Subtle blue border */
-  border-radius: 25px; /* Same border-radius as Summary */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Same shadow as Summary */
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(0, 115, 230, 0.5);
+  border-radius: 25px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
   transition: border-color 0.3s ease;
 }
 
-/* Header styling */
+
 .project-section h2 {
   font-size: 2.5rem;
-  color: bisque; /* White text for the header */
+  color: bisque; 
   font-family: 'Arial', sans-serif;
   margin-bottom: 20px;
   animation: slideFromTop 1.5s ease-out;
